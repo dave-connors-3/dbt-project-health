@@ -6,7 +6,7 @@
 
         {% if node.config.enabled == True %}
 
-            {% do enabled_tests.append(node.name) %}
+            {% do enabled_tests.append(node) %}
 
         {% endif %}
 

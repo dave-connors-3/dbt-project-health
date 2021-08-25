@@ -6,7 +6,7 @@
 
         {% if node.config.enabled == True %}
 
-            {% do enabled_models.append(node.name) %}
+            {% do enabled_models.append(node) %}
 
         {% endif %}
 
