@@ -33,6 +33,6 @@
     {%- set unique_tested_nodes_count = all_tested_nodes | unique | list | length -%}
     {%- set pct = (unique_tested_nodes_count/enabled_models_count * 100) | round(2) -%}
 
-    {{ pct | string + ' %' }}
+    {% do return(pct) %}
 
 {%- endmacro -%}
